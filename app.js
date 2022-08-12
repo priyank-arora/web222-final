@@ -13,16 +13,16 @@
  *      Date:       <SUBMISSION_DATE>
  */
 
-const form = document.querySelector("form");
+// const form = document.querySelector("form");
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    form.remove();
-    const thank = document.getElementById('thank');
-    if (thank !== null) {
-        thank.style.display = "block";
-    }
-});
+// form.addEventListener("submit", (event) => {
+//     event.preventDefault();
+//     form.remove();
+//     const thank = document.getElementById('thank');
+//     if (thank !== null) {
+//         thank.style.display = "block";
+//     }
+// });
 
 function ShowHideDiv(obj) {
     var hiring = document.getElementById("hiring");
