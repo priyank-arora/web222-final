@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="scroll-up-btn">
+    <i class="fas fa-angle-up"></i>
+  </div>
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo"><a href="#">Portfolio</a></div>
+      <ul class="menu">
+        <li><a href="#home" class="menu-btn">Home</a></li>
+        <li><a href="#about" class="menu-btn">About</a></li>
+        <li><a href="#education" class="menu-btn">Education</a></li>
+        <li><a href="#contact" class="menu-btn">Contact</a></li>
+      </ul>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- home section start -->
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="column left" style="width: 60%;">
+          <div class="text-2">Priyank Arora</div>
+          <div class="text-1">DevOps Engineer.</div>
+          <a href="Priyank_D._Arora_.pdf" download class="fas fa-download"> Resume</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="column right" style="width: 40%;">
+          <img src="priyank.jpeg" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- about section start -->
+  <section class="about" id="about">
+    <div class="max-width">
+      <div class="about-content">
+        <div class="column left" style="margin-bottom: auto">
+          <h4 class="title">Basic Information</h4>
+          <table>
+            <tr>
+              <td style="font-weight: 500;">NAME:</td>
+              <td>Priyank Arora</td>
+            </tr>
+            <tr>
+              <td style="font-weight: 500;">EMAIL:</td>
+              <td>arorapriyank17@gmail.com</td>
+            </tr>
+            <tr>
+              <td style="font-weight: 500;">COURSE:</td>
+              <td>Web Programming Principles</td>
+            </tr>
+            <tr>
+              <td style="font-weight: 500;">SECTION:</td>
+              <td>Web222ZAA</td>
+            </tr>
+            <tr>
+              <td style="font-weight: 500;">STUDENT ID:</td>
+              <td>1245</td>
+            </tr>
+            <tr>
+              <td style="font-weight: 500;">INSTRUCTOR:</td>
+              <td>Dr. Muath Alzghool</td>
+            </tr>
+          </table>
+        </div>
+        <div class="column right">
+          <h4 class="title">About me and Academic Honesty</h4>
+          <p>I am Priyank Arora. I am a student at Seneca College studying Computer Programming.</p><br>
+          <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of
+            this assessment has been copied manually or electronically from any other source (including web sites)
+            except for the information supplied by the WEB222 instructors and / or made available in this assessment for
+            my use. I also declare that no part of this assignment has been distributed to other students.</p>
+          <br>
+          <table>
+            <tr>
+              <td style="font-weight: 500;">DATE:</td>
+              <td>11-08-2022</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- education section start -->
+  <section class="education" id="education">
+    <div class="max-width">
+      <h2 class="title">Education</h2>
+      <div class="education-content">
+        <div class="column" style="background-color:#53afff; width: 30%;">
+          <div class="text" style="text-align:center;">
+            <p style="margin-top: 30px;">2022-2023</p>
+            <h6>Diploma</h6>
+          </div>
+        </div>
+        <div class="column" style="background-color:#f7f1f1; width: 70%;">
+          <h2>Diploma in Computer Programming</h2>
+          <h6><i>Seneca College</i></h6>
+          <p>Under the supervision of Dr. Muath Alzghool</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- contact section start -->
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title">Contact me</h2>
+      <div class="contact-content">
+        <form>
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Your First Name" required="" />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <label>Phone number</label>
+            <input type="tel" name="phone" placeholder="Phone Number" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" required>
+          </div>
+          <div class="form-group">
+            <label>Address</label>
+            <input name="address" placeholder="Your Address" required />
+          </div>
+          <div class="form-group">
+            <label>City</label>
+            <datalist id="CanadianCity">
+              <option value="Alberta">
+              <option value="British Columbia">
+              <option value="Manitoba">
+              <option value="New Brunswick">
+              <option value="Nova Scotia">
+              <option value="Ontario">
+              <option value="Yukon">
+            </datalist>
+
+            <input type="text" placeholder="Your City" name="city" list="CanadianCity" required>
+          </div>
+          <div class="form-group">
+            <label>Postal Code</label>
+            <input type="text" name="zipcode" placeholder="Your Postal Code"
+              pattern="^(?!.*[DFIOQU])[A-VXY][0-9][A-Z] ?[0-9][A-Z][0-9]$" required />
+          </div>
+          <div class="form-group">
+            <label>Please select one option</label>
+            <div class="radio-container">
+              <ul>
+                <li>
+                  <input type="radio" id="question" name="radio" checked="checked" onclick="ShowHideDiv()">
+                  <label for="question">Question
+                  </label>
+                  <div class="check"></div>
+                </li>
+                <li>
+                  <input type="radio" id="comment" name="radio" onclick="ShowHideDiv()">
+                  <label for="comment">Comment
+                  </label>
+                  <div class="check"></div>
+                </li>
+                <li>
+                  <input type="radio" id="hiring" name="radio" onclick="ShowHideDiv()">
+                  <label for="hiring">Hiring
+                  </label>
+                  <div class="check"></div>
+                </li>
+                <div id="rateTxt" style="display: none">
+                  Hourly Rate:
+                  <input type="number" id="rate" placeholder="Hourly rate for hiring" />
+                </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea type="text" name="message" placeholder="Write Something..." style="height: 200px;"
+              required></textarea>
+          </div>
+          <br>
+          <div class="button-area">
+            <button type="submit">Send message</button>
+          </div>
+        </form>
+        <div id="thank" style="display: none;">
+          <p>Thank You!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section start -->
+  <footer>
+    <span>Created By Priyank Arora</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
